@@ -16,7 +16,7 @@ async function getSports() {
     filter: {
       "and": [
         {
-          "property": "Sports",
+          "property": "Name",
           "select": {
             "is_not_empty": true
           }
@@ -24,13 +24,13 @@ async function getSports() {
         {
           "or": [
             {
-              "property": "Name",
+              "property": "Date",
               "rich_text": {
                 "starts_with": '2023'
               }
             },
             {
-              "property": "Name",
+              "property": "Date",
               "rich_text": {
                 "starts_with": '2022'
               }
