@@ -16,7 +16,7 @@ async function getSports() {
     filter: {
       "and": [
         {
-          "property": "Name",
+          "property": "Done",
           "select": {
             "is_not_empty": true
           }
